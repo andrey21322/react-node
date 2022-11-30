@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>test project</title>
+</head>
+<body>
+   <div class="wrapper"></div>
+   <div class="createbtn hide" onclick=showCreateForm() id="createModal">create new order</div>
+   <div class="logOut" id="logOut">Logout</div>
+
+   <form id="form" type="submit">
+        <input type="name" name="name" id="name" required placeholder="username">
+        <input type="password" name="password" id="password" autocomplete="on" required placeholder="password">
+        <br/>
+        <button class="registrationBtn" id="registrationBtn">Registration</button>
+        <button class="loginBtn" id="loginBtn">Login</button>
+   </form>
+
+    </br>
+    <div id="messageDiv" class="messageDiv hide">
+        registration error
+    </div>
+    <form class="createForm hide" id="createForm">
+        <div class="cross" id="cross">❌</div>
+        <input type="name" name="name" id="createName" required placeholder="name">
+        <button class="createBtn" id="createBtn">Create</button>
+    </form>
+   
+</body>
+<script src="script.js"></script>
+</html>
